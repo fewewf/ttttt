@@ -1,7 +1,8 @@
 name: Cloud N1 OpenWrt
 
 on:
-  push:
+   workflow_dispatch:
+   push:
     branches:
       - main
     paths:
@@ -18,12 +19,12 @@ env:
   CONFIG_SH: config.sh
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
-  KERNEL_VERSION: 6.1.79
+  KERNEL_VERSION: 6.6.63
 
 jobs:
   build_openwrt:
     name: Build OpenWrt and release
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
 
@@ -144,12 +145,14 @@ jobs:
 
     - name: Create release
       uses: ncipollo/release-action@v1
+      env:
+        GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
       with:
         name: ${{ env.DATE }} ❤️ | N1-OpenWrt 自动编译打包
         allowUpdates: true
         tag: ${{ env.tag_name }}
         commit: main
-        token: ${{ secrets.actions_release }}
+        #token: ${{ secrets.actions_release }}
         body: |
           编译使用版本:
           ${{ env.useVersionInfo }}
@@ -162,6 +165,8 @@ jobs:
 
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@v0.3.2
+      env:
+        GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
       with:
         keep_latest: 3
         delete_tags: true
