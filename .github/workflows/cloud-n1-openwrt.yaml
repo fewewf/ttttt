@@ -2,15 +2,7 @@ name: Cloud N1 OpenWrt
 
 on:
    workflow:
-   #push:
-    #branches:
-    #  - main
-    # paths:
-     # - 'README.md'
-     # - 'script.sh'
-     # - 'config.sh'
-  schedule:
-    - cron: 0 8 * * 0
+   
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
