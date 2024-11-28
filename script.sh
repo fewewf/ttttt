@@ -2,10 +2,13 @@
 cd openwrt
 
 # Add luci-app-adguardhome
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package-temp/luci-app-adguardhome
-mv -f package-temp/luci-app-adguardhome package/lean/
-rm -rf package-temp
-git clone https://github.com/kenzok8/small-package package/small-package
+# git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package-temp/luci-app-adguardhome
+# mv -f package-temp/luci-app-adguardhome package/lean/
+# rm -rf package-temp
+git clone https://github.com/kenzok8/small-package.git theme-temp/small-package
+mv -f theme-temp/small-package package/lean/
+rm -rf theme-temp
+rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
 # Add luci-theme-opentomcat
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git theme-temp/luci-theme-opentomcat
 rm -rf theme-temp/luci-theme-opentomcat/LICENSE
