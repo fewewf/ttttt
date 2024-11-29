@@ -137,14 +137,14 @@ jobs:
 
     - name: Create release
       uses: ncipollo/release-action@v1
-      env:
-        GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
+    #  env:
+      #  GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
       with:
         name: ${{ env.DATE }} ❤️ | N1-OpenWrt 自动编译打包
         allowUpdates: true
         tag: ${{ env.tag_name }}
         commit: main
-        # token: ${{ secrets.actions_release }}
+         token: ${{ secrets.actions_release }}
         body: |
           编译使用版本:
           ${{ env.useVersionInfo }}
