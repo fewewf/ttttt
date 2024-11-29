@@ -11,6 +11,8 @@ cd openwrt
 sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
 # Add luci-theme-opentomcat
+default_theme='Argon'
+sed -i "s/bootstrap/$default_theme/g" feeds/luci/modules/luci-base/root/etc/config/luci
 
 # sed -i "s/bootstrap/$default_theme/g" feeds/luci/modules/luci-base/root/etc/config/luci
 
