@@ -192,6 +192,8 @@ CONFIG_PACKAGE_luci-i18n-docker-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-dockerman-zh-cn=y
 CONFIG_PACKAGE_luci-lib-docker=y
 CONFIG_PACKAGE_luci-proto-ipv6=y
+CONFIG_PACKAGE_luci-theme-argon=y
+CONFIG_PACKAGE_luci-app-argon-config=y
 CONFIG_PACKAGE_luci-app-openclash=y
 CONFIG_PACKAGE_luci-app-dockerman=y
 CONFIG_PACKAGE_luci-app-netdata=y
@@ -208,7 +210,7 @@ CONFIG_PACKAGE_luci-app-advanced=y
 # other packages
 CONFIG_PACKAGE_docker-compose=y
 CONFIG_PACKAGE_autocore=y
-CONFIG_PACKAGE_luci-theme-opentomcat=y
+# CONFIG_PACKAGE_luci-theme-opentomcat=y
 # CONFIG_PACKAGE_miniupnpd is not set
 CONFIG_PACKAGE_mount-utils=y
 CONFIG_PACKAGE_odhcp6c=y
