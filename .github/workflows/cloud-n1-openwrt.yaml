@@ -139,8 +139,7 @@ jobs:
       uses: ncipollo/release-action@v1
       #if: ${{ env.PACKAGED_STATUS == 'success' }} && !cancelled()
       
-      env:
-       GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
+     
       with:
         name: ${{ env.DATE }} ❤️ | N1-OpenWrt 自动编译打包
         allowUpdates: true
