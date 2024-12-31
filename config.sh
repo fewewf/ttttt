@@ -171,12 +171,12 @@ CONFIG_PACKAGE_libzstd=y
 CONFIG_PACKAGE_losetup=y
 CONFIG_PACKAGE_lsattr=y
 CONFIG_PACKAGE_lsblk=y
-CONFIG_PACKAGE_luci-app-wol is not set
-CONFIG_PACKAGE_nlbwmon is not set
-CONFIG_PACKAGE_luci-app-nlbwmon is not set
-CONFIG_PACKAGE_shadowsocksr-libev is not set
-CONFIG_PACKAGE_luci-app-vlmcsd is not set
-CONFIG_PACKAGE_vlmcsd is not set
+CONFIG_PACKAGE_luci-app-wol=no
+CONFIG_PACKAGE_nlbwmon is not=no
+CONFIG_PACKAGE_luci-app-nlbwmon=no
+CONFIG_PACKAGE_shadowsocksr-libev=no
+CONFIG_PACKAGE_luci-app-vlmcsd=no
+CONFIG_PACKAGE_vlmcsd=no
 # CONFIG_PACKAGE_luci-app-adguardhome=y
 CONFIG_PACKAGE_luci-app-amlogic=y
 # CONFIG_PACKAGE_luci-app-arpbind is not set
@@ -223,7 +223,7 @@ CONFIG_PACKAGE_odhcp6c_ext_cer_id=0
 CONFIG_PACKAGE_odhcpd-ipv6only=y
 CONFIG_PACKAGE_odhcpd_ipv6only_ext_cer_id=0
 CONFIG_PACKAGE_parted=y
-# CONFIG_PACKAGE_pdnsd-alt is not set
+CONFIG_PACKAGE_pdnsd-alt=no
 CONFIG_PACKAGE_perl=y
 CONFIG_PACKAGE_perl-http-date=y
 CONFIG_PACKAGE_perlbase-base=y
