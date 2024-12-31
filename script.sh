@@ -15,6 +15,10 @@ default_theme='Argon'
 sed -i "s/bootstrap/$default_theme/g" feeds/luci/modules/luci-base/root/etc/config/luci
 
 # sed -i "s/bootstrap/$default_theme/g" feeds/luci/modules/luci-base/root/etc/config/luci
+sed -i 's/192.168.1.1/192.168.110.247/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.110.247/g' package/base-files/luci2/bin/config_generate
+sed -i 's/192.168.1.1/192.168.110.247/g' package/base-files/Makefile
+sed -i 's/192.168.1.1/192.168.110.247/g' package/base-files/image-config.in
 
 # Add luci-app-amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git  package-temp/luci-app-amlogic
