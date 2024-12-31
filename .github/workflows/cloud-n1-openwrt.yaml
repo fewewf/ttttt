@@ -158,9 +158,9 @@ jobs:
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@master
       env:
-        GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        token: ${{ github.token }}
+        
         keep_latest: 2
         delete_tags: true
     - name: Delete Workflow Runs
