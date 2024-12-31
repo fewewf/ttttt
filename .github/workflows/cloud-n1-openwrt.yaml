@@ -137,15 +137,16 @@ jobs:
 
     - name: Create release
       uses: ncipollo/release-action@v1
-       
-       #env:
-        # GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
+      #if: ${{ env.PACKAGED_STATUS == 'success' }} && !cancelled()
+      
+      env:
+       GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
       with:
         name: ${{ env.DATE }} ❤️ | N1-OpenWrt 自动编译打包
         allowUpdates: true
         tag: ${{ env.tag_name }}
         commit: main
-        token: ${{ env.GITHUB_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         body: |
           编译使用版本:
           ${{ env.useVersionInfo }}
@@ -163,4 +164,10 @@ jobs:
       with:
         keep_latest: 2
         delete_tags: true
-      
+    - name: Delete Workflow Runs
+      uses: Mattraks/delete-workflow-runs@v2.0.6
+      with:
+         token: ${{ github.token }}
+         repository: ${{ github.repository }}
+         retain_days: 2
+         keep_minimum_runs: 0
