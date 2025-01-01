@@ -25,8 +25,8 @@ git clone https://github.com/ophub/luci-app-amlogic.git  package-temp/luci-app-a
 mv -f package-temp/luci-app-amlogic/luci-app-amlogic package/lean/
 rm -rf package-temp
 #git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
-#git clone https://github.com/kenzok8/small-package package/small-package
-git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages 
+git clone https://github.com/kenzok8/small-package package/small-package
+#git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages 
 # sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 # rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,luci-app-dogcom,transmission,natflow,wireless-regdb}
 rm -rf package/small-package/luci-app-dogcom
