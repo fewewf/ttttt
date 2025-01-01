@@ -186,6 +186,7 @@ CONFIG_PACKAGE_luci-app-filetransfer=no
 CONFIG_PACKAGE_luci-app-vlmcsd=no
 CONFIG_PACKAGE_luci-app-accesscontrol=no
 CONFIG_PACKAGE_vlmcsd=no
+CONFIG_PACKAGE_luci-app-autoreboot=no
 # CONFIG_PACKAGE_luci-app-adguardhome=y
 CONFIG_PACKAGE_luci-app-amlogic=y
 # CONFIG_PACKAGE_luci-app-arpbind is not set
