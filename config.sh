@@ -1,12 +1,12 @@
 #!/bin/bash
 cd openwrt
 cat >> .config <<EOF
-# CONFIG_TARGET_armvirt=y
-# CONFIG_TARGET_armvirt_64=y
-# CONFIG_TARGET_armvirt_64_DEVICE_generic=y
-CONFIG_TARGET_armsr=y
-CONFIG_TARGET_armsr_armv8=y
-CONFIG_TARGET_armsr_armv8_DEVICE_generic=y
+CONFIG_TARGET_armvirt=y
+CONFIG_TARGET_armvirt_64=y
+CONFIG_TARGET_armvirt_64_DEVICE_generic=y
+#CONFIG_TARGET_armsr=y
+#CONFIG_TARGET_armsr_armv8=y
+#CONFIG_TARGET_armsr_armv8_DEVICE_generic=y
 CONFIG_BRCMFMAC_PCIE=y
 CONFIG_BRCMFMAC_SDIO=y
 CONFIG_BRCMFMAC_USB=y
