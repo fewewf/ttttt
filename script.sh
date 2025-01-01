@@ -33,7 +33,7 @@ rm -rf package/small-package/luci-app-dogcom
 rm -rf package/small-package/transmission
 rm -rf package/small-package/haproxy
 rm -rf package/small-package/natflow
-rm -rf package/small-package/docked
+rm -rf package/small-package/dockerd
 rm -rf feeds/luci/applications/luci-app-filetransfer
 rm -rf package/small-package/luci-app-openvpn-server
 rm -rf package/small-package/openvpn-easy-rsa-whisky
@@ -41,13 +41,13 @@ rm -rf package/small-package/luci-app-wrtbwmon
 rm -rf package/small-package/wrtbwmon
 rm -rf package/small-package/luci-app-koolproxy
 rm -rf package/small-package/luci-app-godproxy
-rm -rf package/small-package/luci-app-argon*
-rm -rf package/small-package/luci-theme-argon*
+#rm -rf package/small-package/luci-app-argon*
+#rm -rf package/small-package/luci-theme-argon*
 #rm -rf package/small-package/luci-app-amlogic
 rm -rf package/small-package/luci-app-unblockneteasemusic
 rm -rf package/small-package/upx-static
 rm -rf package/small-package/upx
-rm -rf package/small-package/firewall*
+rm -rf package/passwall-packages/shadowsocksr-libev
 rm -rf package/small-package/opkg
 rm -rf package/small-package/base-files
 rm -rf package/small-package/luci-app-bandwidthd
