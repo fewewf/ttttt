@@ -33,5 +33,5 @@ rm -rf package/lean/small-package/luci-app-dogcom
 rm -rf package/lean/small-package/transmission
 rm -rf package/lean/small-package/haproxy
 rm -rf package/lean/small-package/natflow
-rm -rf package/lean/small-package
+# rm -rf package/lean/small-package
 
