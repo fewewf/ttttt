@@ -178,14 +178,15 @@ CONFIG_PACKAGE_shadowsocksr-libev=no
 CONFIG_PACKAGE_shadowsocksr-libev-ssr-check=no
 CONFIG_PACKAGE_shadowsocksr-libev-ssr-local=no
 CONFIG_PACKAGE_shadowsocksr-libev-ssr-redir=no
-CONFIG_PACKAGE_luci-app-filetransfer =no
+CONFIG_PACKAGE_luci-app-ssr-plus=no
+CONFIG_PACKAGE_luci-app-filetransfer=no
 CONFIG_PACKAGE_luci-app-vlmcsd=no
 CONFIG_PACKAGE_luci-app-accesscontrol=no
 CONFIG_PACKAGE_vlmcsd=no
 # CONFIG_PACKAGE_luci-app-adguardhome=y
 CONFIG_PACKAGE_luci-app-amlogic=y
 # CONFIG_PACKAGE_luci-app-arpbind is not set
-# CONFIG_PACKAGE_luci-app-ddns is not set
+CONFIG_PACKAGE_luci-app-ddns=no
 CONFIG_PACKAGE_luci-app-docker=y
 CONFIG_PACKAGE_luci-app-dockerman=y
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
