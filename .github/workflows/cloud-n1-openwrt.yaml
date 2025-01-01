@@ -9,8 +9,8 @@ env:
   REPO_BRANCH: master
   SCRIPT_SH: script.sh
   CONFIG_SH: config.sh
-  UPLOAD_FIRMWARE: true
   FILES: N1/files
+  UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
   KERNEL_VERSION: 6.6.67
 
@@ -67,7 +67,7 @@ jobs:
 
     - name: Update feeds
       run: |
-        [ -e $FILES ] && mv $FILES openwrt/files
+        
         [ -e files ] && mv files openwrt/files
         chmod +x $SCRIPT_SH
         ./$SCRIPT_SH
