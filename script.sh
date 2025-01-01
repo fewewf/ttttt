@@ -26,3 +26,5 @@ mv -f package-temp/luci-app-amlogic/luci-app-amlogic package/lean/
 rm -rf package-temp
 git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone https://github.com/kenzok8/small package/small
+git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages 
+sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
