@@ -29,4 +29,9 @@ rm -rf package-temp
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages 
 # sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 # rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,luci-app-dogcom,transmission,natflow,wireless-regdb}
+rm -rf package/lean/small-package/luci-app-dogcom
+rm -rf package/lean/small-package/transmission
+rm -rf package/lean/small-package/haproxy
+rm -rf package/lean/small-package/natflow
+rm -rf package/lean/small-package
 
