@@ -37,8 +37,8 @@ rm -rf package/small-package/luci-app-nginx-pingos
 rm -rf package/small-package/luci-app-ssr-plus
 rm -rf package/small-package/luci-app-onliner
 rm -rf package/small-package/natflow
-# rm -rf package/small-package/luci-lib-taskd
-
+rm -rf package/small-package/haproxy
+rm -rf package/small-package/transmission
 rm -rf package/feeds/packages/aliyundrive-webdav
 rm -rf feeds/packages/multimedia/aliyundrive-webdav
 rm -rf package/feeds/packages/perl-xml-parser
