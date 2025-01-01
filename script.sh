@@ -34,6 +34,7 @@ rm -rf package/lean/small-package/transmission
 rm -rf package/lean/small-package/haproxy
 rm -rf package/lean/small-package/natflow
 rm -rf package/lean/small-package/dockerd
+rm -rf package/lean/small-package/docker
 rm -rf feeds/luci/applications/luci-app-filetransfer
 rm -rf package/lean/small-package/luci-app-openvpn-server
 rm -rf package/lean/small-package/openvpn-easy-rsa-whisky
