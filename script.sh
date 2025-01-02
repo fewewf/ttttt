@@ -38,7 +38,7 @@ rm -rf package/small-package/luci-app-koolproxy
 rm -rf package/small-package/luci-app-godproxy
 rm -rf package/small-package/dockerd
 rm -rf package/small-package/docker
-#rm -rf package/small-package/luci-app-amlogic
+rm -rf package/small-package/transmission
 rm -rf package/small-package/luci-app-unblockneteasemusic
 rm -rf package/small-package/upx-static
 rm -rf package/small-package/upx
@@ -53,7 +53,7 @@ rm -rf package/small-package/luci-app-nginx-pingos
 rm -rf package/small-package/luci-app-ssr-plus
 rm -rf package/small-package/luci-app-onliner
 rm -rf package/small-package/natflow
-# rm -rf package/small-package/luci-lib-taskd
+rm -rf package/small-package/haproxy
 
 rm -rf package/feeds/packages/aliyundrive-webdav
 rm -rf feeds/packages/multimedia/aliyundrive-webdav
