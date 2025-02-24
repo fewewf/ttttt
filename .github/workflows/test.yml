@@ -6,7 +6,7 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: config.sh
+  CONFIG_FILE: config
   DIY_SH: script.sh
  # FILES: N1-LEDE/files
   TZ: Asia/Shanghai
