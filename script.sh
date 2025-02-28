@@ -19,6 +19,8 @@ sed -i 's/192.168.1.1/192.168.1.80/g' package/base-files/files/bin/config_genera
 sed -i 's/192.168.1.1/192.168.1.80/g' package/base-files/luci2/bin/config_generate
 sed -i 's/192.168.1.1/192.168.1.80/g' package/base-files/Makefile
 sed -i 's/192.168.1.1/192.168.1.80/g' package/base-files/image-config.in
+git clone https://github.com/immortalwrt-collections/openwrt-cdnspeedtest package/cdnspeedtest
+git clone https://github.com/dsddr02/peed11 package/luci-app-cloudflarespeedtest
 
 # Add luci-app-amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git  package-temp/luci-app-amlogic
