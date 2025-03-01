@@ -1,5 +1,5 @@
 #!/bin/bash
-cd openwrt
+
 
 # Add luci-app-adguardhome
 # git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package-temp/luci-app-adguardhome
@@ -11,7 +11,7 @@ cd openwrt
 #sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 #rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
 # Add luci-theme-opentomcat
-default_theme='Argon'
+#default_theme='Argon'
 # sed -i "s/bootstrap/$default_theme/g" feeds/luci/modules/luci-base/root/etc/config/luci
 
 # sed -i "s/bootstrap/$default_theme/g" feeds/luci/modules/luci-base/root/etc/config/luci
@@ -36,9 +36,12 @@ rm -rf package/small-package/luci-app-wrtbwmon
 rm -rf package/small-package/wrtbwmon
 rm -rf package/small-package/luci-app-koolproxy
 rm -rf package/small-package/luci-app-godproxy
-rm -rf package/small-package/luci-app-argon*
-rm -rf package/small-package/luci-theme-argon*
-#rm -rf package/small-package/luci-app-amlogic
+rm -rf feeds/packages/net/v2ray-geodata
+rm -rf feeds/luci/themes/luci-theme-argon
+rm -rf feeds/luci/applications/luci-app-argon-config
+rm -rf feeds/packages/net/mosdns
+rm -rf feeds/packages/utils/v2dat
+rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf package/small-package/luci-app-unblockneteasemusic
 rm -rf package/small-package/upx-static
 rm -rf package/small-package/upx
