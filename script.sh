@@ -11,8 +11,8 @@
 #sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 #rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
 # Add luci-theme-opentomcat
-#default_theme='Argon'
-# sed -i "s/bootstrap/$default_theme/g" feeds/luci/modules/luci-base/root/etc/config/luci
+default_theme='Argon'
+sed -i "s/bootstrap/$default_theme/g" feeds/luci/modules/luci-base/root/etc/config/luci
 
 # sed -i "s/bootstrap/$default_theme/g" feeds/luci/modules/luci-base/root/etc/config/luci
 sed -i 's/192.168.1.1/192.168.1.80/g' package/base-files/files/bin/config_generate
