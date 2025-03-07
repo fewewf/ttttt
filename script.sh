@@ -47,7 +47,7 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf package/small-package/luci-app-unblockneteasemusic
 rm -rf package/small-package/upx-static
 rm -rf package/small-package/upx
-#rm -rf package/small-package/firewall*
+rm -rf package/small-package/firewall
 #rm -rf package/small-package/opkg
 rm -rf package/small-package/base-files
 rm -rf package/small-package/luci-app-bandwidthd
