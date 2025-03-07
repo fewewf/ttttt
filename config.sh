@@ -219,6 +219,26 @@ CONFIG_PACKAGE_luci-app-passwall2=y
 CONFIG_PACKAGE_openssh-sftp-server=y
 CONFIG_PACKAGE_luci-app-advanced=y
 # CONFIG_PACKAGE_luci-app-turboacc=y
+CONFIG_PACKAGE_luci-app-wol=n 
+# 启用网络
+CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_PDNSD=n
+CONFIG_PACKAGE_pdnsd-alt=n
+CONFIG_PACKAGE_luci-app-accesscontrol=n
+CONFIG_PACKAGE_luci-app-upnp=n
+CONFIG_PACKAGE_luci-app-vsftpd=n
+CONFIG_PACKAGE_luci-app-nlbwmon=n
+CONFIG_PACKAGE_luci-app-wrtbwmon=n
+CONFIG_PACKAGE_luci-app-ssr-plus=n
+CONFIG_PACKAGE_luci-app-arpbind=n
+CONFIG_PACKAGE_luci-app-filetransfer=n
+CONFIG_PACKAGE_luci-app-autoreboot=n
+#自带ddns插件
+CONFIG_PACKAGE_luci-app-ddns=n
+CONFIG_PACKAGE_ddns-scripts=n
+CONFIG_PACKAGE_ddns-scripts-services=n
+CONFIG_PACKAGE_ddns-scripts_aliyun=n
+CONFIG_PACKAGE_ddns-scripts_dnspod=n
+
 # other packages
 CONFIG_PACKAGE_docker-compose=y
 CONFIG_PACKAGE_autocore=y
