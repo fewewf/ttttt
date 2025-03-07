@@ -1,4 +1,4 @@
-name: Build OpenWRT-LEAN for gpt
+name: Build OpenWRT-LEAN for gpt2
 
 on:
   workflow_dispatch:
