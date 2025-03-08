@@ -37,7 +37,7 @@ rm -rf package/small-package/wrtbwmon
 rm -rf package/small-package/luci-app-koolproxy
 rm -rf package/small-package/luci-app-godproxy
 rm -rf package/small-package/luci-app-cloudflarespeedtest
-# rm -rf package/small-package/nftables
+rm -rf package/small-package/cdnspeedtest
 rm -rf feeds/packages/net/v2ray-geodata
 rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-argon-config
