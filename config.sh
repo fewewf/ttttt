@@ -217,11 +217,13 @@ CONFIG_PACKAGE_luci-app-hd-idle=y
 #CONFIG_PACKAGE_luci-app-mihomo=y
 CONFIG_PACKAGE_luci-app-passwall2=y
 CONFIG_PACKAGE_openssh-sftp-server=y
-CONFIG_PACKAGE_luci-app-advanced=y
+#CONFIG_PACKAGE_luci-app-advanced=y
 # CONFIG_PACKAGE_luci-app-turboacc=y
 CONFIG_PACKAGE_luci-app-wol=n 
 CONFIG_PACKAGE_luci-app-cloudflarespeedtest=y
 CONFIG_PACKAGE_cdnspeedtest=y
+CONFIG_PACKAGE_luci-app-samba4=y
+CONFIG_PACKAGE_luci-app-diskman=y
 # 启用网络
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_PDNSD=n
 CONFIG_PACKAGE_pdnsd-alt=n
